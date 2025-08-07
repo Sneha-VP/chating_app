@@ -26,7 +26,8 @@ class ChatScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ChatController controller = Get.find<ChatController>();
-     ///
+
+    ///
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -82,7 +83,8 @@ class ChatScreen extends StatelessWidget {
             return Align(
               alignment: isMe ? Alignment.centerRight : Alignment.centerLeft,
               child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
                 margin: const EdgeInsets.only(top: 10),
                 decoration: BoxDecoration(
                   color: isMe ? Colors.pink.shade100 : Colors.grey.shade200,
@@ -116,7 +118,8 @@ class ChatScreen extends StatelessWidget {
                     hintText: "Type a message...",
                     filled: true,
                     fillColor: Colors.grey.shade100,
-                    contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                    contentPadding: const EdgeInsets.symmetric(
+                        horizontal: 16, vertical: 12),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                       borderSide: BorderSide.none,

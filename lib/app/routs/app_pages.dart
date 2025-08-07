@@ -28,7 +28,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: Routes.initialSplash,
-      page: () =>  InitialSplashScreen(),
+      page: () => InitialSplashScreen(),
       binding: InitialSplashBinding(),
     ),
     GetPage(

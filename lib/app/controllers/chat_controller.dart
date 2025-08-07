@@ -26,7 +26,8 @@ class ChatController extends GetxController {
     isLoading.value = true;
     try {
       print("user1==$user1, user2==$user2");
-      final fetchedMessages = await _apiProvider.fetchChatMessages(user1, user2);
+      final fetchedMessages =
+          await _apiProvider.fetchChatMessages(user1, user2);
       messages.assignAll(fetchedMessages);
       print("fetchedMessages==${fetchedMessages.toString()}");
     } catch (e) {

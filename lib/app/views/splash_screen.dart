@@ -8,8 +8,7 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:
-      Stack(
+      body: Stack(
         children: [
           // Background Image
           Container(

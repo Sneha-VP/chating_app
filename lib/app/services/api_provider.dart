@@ -118,9 +118,9 @@ class ApiProvider with CacheManager {
 
   /// Get chat messages
   Future<List<ChatMessage>> fetchChatMessages(int user1, int user2) async {
-    print("user1--"+user1.toString());
-    print("user1--"+user2.toString());
-    print("user1--"+token.toString());
+    print("user1--" + user1.toString());
+    print("user1--" + user2.toString());
+    print("user1--" + token.toString());
     if (token == null) {
       throw Exception('Access token is not set');
     }
@@ -137,7 +137,7 @@ class ApiProvider with CacheManager {
     if (response.statusCode == 200) {
       final Map<String, dynamic> parsed = Japx.decode(response.data);
       final List<dynamic> data = parsed['data'] ?? [];
-      print("chat data==="+data.toString());
+      print("chat data===" + data.toString());
       return data.map((json) => ChatMessage.fromJson(json)).toList();
     } else {
       throw Exception(
